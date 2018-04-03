@@ -1,0 +1,40 @@
+{
+  "key":"group_54aefaae0fe88",
+  "title":"Post Type - Partners",
+  "fields":[
+    {
+      "key":"field_54aefac440308",
+      "label":"Partner Logo",
+      "name":"partner_logo",
+      "prefix":"",
+      "type":"image",
+      "instructions":"On the home page, logos appear for each partner when users place their cursor over a tile. Please upload logos for each partner here.",
+      "required":0,
+      "conditional_logic":0,
+      "wrapper":{
+        "width":"",
+        "class":"",
+        "id":""
+      },
+      "return_format":"array",
+      "preview_size":"partner-logo",
+      "library":"all"
+    }
+  ],
+  "location":[
+    [
+      {
+        "param":"post_type",
+        "operator":"==",
+        "value":"jtwc_partners"
+      }
+    ]
+  ],
+  "menu_order":0,
+  "position":"normal",
+  "style":"default",
+  "label_placement":"top",
+  "instruction_placement":"label",
+  "hide_on_screen":"",
+  "modified":1424982009
+}

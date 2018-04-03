@@ -1,0 +1,294 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of LESS' great features: 
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques like box shadow and
+border-radius.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more. 
+
+******************************************************************/
+
+/*********************
+FIX IE7 INLINE-BLOCK
+*********************/
+.fixIE7 {
+	*display:inline;
+	*zoom:1;
+}
+
+/*********************
+CLEARFIXIN'
+*********************/
+
+// Contain floats: nicolasgallagher.com/micro-clearfix-hack/
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+/*********************
+TOOLS
+*********************/
+
+* { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing:    border-box; 
+	box-sizing:         border-box; 
+}
+
+.image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.outer {
+	display: table;
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	.inner {
+		display: table-cell;
+		vertical-align: middle;
+		.text-center;
+		position: relative;
+		width: 100%;
+	}
+}
+
+.center-pad {
+	padding: 0 15px;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+	margin-top: 0 !important;
+}
+
+.no-margin-left {
+	margin-left: 0 !important;
+}
+
+.no-margin-right {
+	margin-right: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+@gold:             	#ffc000;
+
+@dark-gray: 		#29343b;
+
+@blue: 			#00a8e2;
+
+@gray-90: 		rgba(51,65,74,.9);
+
+@gray: 			#33414a;
+@gray2: 			#29343b;
+
+@gray-30: 		rgba(41,52,59,.3);
+@gray-50: 		rgba(41,52,59,.3);
+
+@gray-bar: 		rgba(51,65,74,.9);
+
+@black1: 			#191d2b;
+@black2: 			#30363a;
+@light-blue: 		#e7ebef;
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+.effra-bold {
+	font-family: "effra-n7","effra",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.effra-reg {
+	font-family: "effra-n4","effra",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.fut-book {
+	font-family: "futura-pt-n4","futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.fut-heavy {
+	font-family: "futura-pt-n7","futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.merri-reg {
+	font-family: "merriweather-n4","merriweather",serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.merri-ital {
+	font-family: "merriweather-i4","merriweather",serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.montserrat-reg {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.montserrat-bold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.kepler-reg {
+	font-family: "kepler-std", "kepler-std-n4", serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.kepler-italic {
+	font-family: "kepler-std", "kepler-std-i4", serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+/* text alignment */
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+/*********************
+BORDER RADIUS
+*********************/
+
+/* 
+NOTE: For older browser support (and some mobile), 
+don't use the shorthand to define *different* corners. 
+
+USAGE: .border-radius(4px); 
+
+*/
+.border-radius(@radius: 4px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+/*********************
+BACKGROUND SIZE
+*********************/
+
+/*
+USAGE: .background-size(4px, 4px); 
+*/
+
+.background-size(@xpos: 0, @ypos: 0) {
+  -webkit-background-size: @xpos @ypos;
+     -moz-background-size: @xpos @ypos;
+          background-size: @xpos @ypos;
+}
+
+/*********************
+TRANISTION
+*********************/
+
+/* .transition(all,2s); */
+.transition(@what: all, @time: 0.2s, @transition: ease-in-out) {
+	-webkit-transition: @what @time @transition;
+	-moz-transition:    @what @time @transition;
+	-ms-transition:     @what @time @transition;
+	-o-transition:      @what @time @transition;
+	transition:         @what @time @transition;
+}
+
+
+
+/*********************
+ Pseudo
+*********************/
+.pseudo {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+/*********************
+ Stretch
+*********************/
+.stretch {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* =- -= =- -= =- -= =--= =- 
+
+	Dat Ease!!!
+
+=- -= =--= =- -= = --= =- -= =- */
+
+@cubes1: .17,.92,.66,.97; // slow out
+@cubes2: 1.000, 0.360, 0.540, 0.930; // slow in
+
+.ease1 {
+	-webkit-transition: all 400ms cubic-bezier(@cubes1); 
+	   -moz-transition: all 400ms cubic-bezier(@cubes1); 
+	     -o-transition: all 400ms cubic-bezier(@cubes1); 
+	        transition: all 400ms cubic-bezier(@cubes1); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(@cubes1); 
+	   -moz-transition-timing-function: cubic-bezier(@cubes1); 
+	     -o-transition-timing-function: cubic-bezier(@cubes1); 
+	        transition-timing-function: cubic-bezier(@cubes1); /* custom */
+}
+
+.ease2 {
+	-webkit-transition: all 400ms cubic-bezier(@cubes2); 
+	   -moz-transition: all 400ms cubic-bezier(@cubes2); 
+	     -o-transition: all 400ms cubic-bezier(@cubes2); 
+	        transition: all 400ms cubic-bezier(@cubes2); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(@cubes2); 
+	   -moz-transition-timing-function: cubic-bezier(@cubes2); 
+	     -o-transition-timing-function: cubic-bezier(@cubes2); 
+	        transition-timing-function: cubic-bezier(@cubes2); /* custom */
+}
+
+.ease-special {
+	-webkit-transition: all 500ms cubic-bezier(0.305, 0.750, 0.720, 0.985); 
+	   -moz-transition: all 500ms cubic-bezier(0.305, 0.750, 0.720, 0.985); 
+	     -o-transition: all 500ms cubic-bezier(0.305, 0.750, 0.720, 0.985); 
+	        transition: all 500ms cubic-bezier(0.305, 0.750, 0.720, 0.985); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(0.305, 0.750, 0.720, 0.985); 
+	   -moz-transition-timing-function: cubic-bezier(0.305, 0.750, 0.720, 0.985); 
+	     -o-transition-timing-function: cubic-bezier(0.305, 0.750, 0.720, 0.985); 
+	        transition-timing-function: cubic-bezier(0.305, 0.750, 0.720, 0.985); /* custom */
+}

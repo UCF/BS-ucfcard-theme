@@ -1,0 +1,44 @@
+{
+  "key":"group_54b6b1c708cf0",
+  "title":"Post Category - Events",
+  "fields":[
+    {
+      "key":"field_54b6b1d5e3f6d",
+      "label":"Event Date",
+      "name":"event_date",
+      "prefix":"",
+      "type":"text",
+      "instructions":"",
+      "required":0,
+      "conditional_logic":0,
+      "wrapper":{
+        "width":"",
+        "class":"",
+        "id":""
+      },
+      "default_value":"",
+      "placeholder":"",
+      "prepend":"",
+      "append":"",
+      "maxlength":"",
+      "readonly":0,
+      "disabled":0
+    }
+  ],
+  "location":[
+    [
+      {
+        "param":"post_category",
+        "operator":"==",
+        "value":"category:events"
+      }
+    ]
+  ],
+  "menu_order":0,
+  "position":"normal",
+  "style":"default",
+  "label_placement":"top",
+  "instruction_placement":"label",
+  "hide_on_screen":"",
+  "modified":1424981993
+}

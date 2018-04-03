@@ -1,0 +1,69 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+
+
+//
+// IMPORTING STYLES
+//
+
+// import mixins
+@import "_mixins.less";
+
+
+// styles in base.less
+@import "_base.less";
+
+
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.less
+	@import "_768up.less";
+
+} // end of media query
+
+
+@media only screen and (min-width: 960px) {
+
+	// styles in 960up.less
+	@import "_960up.less";
+
+} // end of media query
+
+@media only screen and (min-width: 1080px) {
+
+	// styles in 1080up.less
+	@import "_1080up.less";
+
+} // end of media query
+
+@media only screen and (min-width: 1180px) {
+
+	// styles in 1180up.less
+	@import "_1180up.less";
+
+} // end of media query
+
+@media only screen and (min-width: 1350px) {
+
+	// styles in 1350up.less
+	@import "_1350up.less";
+
+} // end of media query
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-device-width: 960px),
+       only screen and (min--moz-device-pixel-ratio: 1.5) and (max-device-width: 960px),
+       only screen and (min-device-pixel-ratio: 1.5) and (max-device-width: 960px) {
+
+	// styles in 2x.less
+	@import "_2x.less";
+
+} // end of media query

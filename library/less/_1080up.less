@@ -1,0 +1,703 @@
+
+/*********************
+04. LINK STYLES
+*********************/
+
+.border-btn-white {
+	.ease1;
+
+	span {
+		.ease1;
+	}
+
+	&:hover {
+		background: rgba(255,255,255,1);
+
+		span {
+			color: @dark-gray;
+		}
+	}
+}
+
+.black-btn {
+	&:hover {
+		background-color: @blue;
+
+		span {
+			color: white;
+		}
+	}
+}
+
+#gray-bar {
+	.center {
+		padding: 0 0 0 20px;
+	}
+}
+
+#file-browse-wrap {
+	
+	.browse-button {
+		.ease1;
+		cursor: pointer;
+		&:hover {
+			background-color: @gold!important;
+			color: @gray!important;
+		}
+	}
+
+}
+
+#department-forms-main-wrap {
+	#gform_wrapper_3,
+	#gform_wrapper_4,
+	#gform_wrapper_5,
+	#gform_wrapper_6 {
+
+		#gform_fields_3,
+		#gform_fields_4,
+		#gform_fields_5,
+		#gform_fields_6 {
+
+			li {
+				width: 270px;
+			}
+
+		}
+
+	}
+
+	#gform_wrapper_3 {
+
+		.gfield_list {
+
+			.gfield_list_cell {
+				width: 270px;
+			}
+
+			.gfield_list_icons {
+				right: 230px;
+			}
+			
+		}
+
+	}
+}
+
+
+/*********************
+02. MODALS
+*********************/
+
+.fancybox-overlay, .modal-wrap {
+	display: block!important;
+}
+
+.fancybox-inner, .fancybox-outer {
+	width: 100% !important;
+}
+
+.modal-wrap {
+	width: 100%!important;
+	max-width: 960px!important;
+	left: 50%!important;
+	margin-left: -480px!important;
+	.fancybox-inner {
+
+	}
+
+	.fancybox-close {
+		position: absolute;
+		top: -54px;
+		right: 0;
+		width: 49px;
+		height: 54px;
+		background: #263137;
+		.ease1;
+
+		&:before {
+			.pseudo;
+			width: 26px;
+			height: 26px;
+			background: url(../images/icon-x-26.png) no-repeat center;
+			top: 50%;
+			margin-top: -13px;
+			left: 50%;
+			margin-left: -13px;
+		}
+
+		&:hover {
+			background: lighten(#263137, 5%);
+		}
+	}
+
+
+	.a-modal {
+		background-color: #33414a;
+
+		.left, .right {
+			width: 50%;
+			float: left;
+		}
+
+		.right-arrow {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 20px;
+			height: 20px;
+			background: white;
+		}
+
+		.left {
+			position: relative;
+			background-color: #33414a;
+			&.no-slider {
+				padding-bottom: 51%;
+				background-size: cover;
+				background-position: center;
+			}
+
+			&:before {
+				content: '';
+				height: 0;
+				padding-bottom: 49.99%;
+			} 
+			.featured-img {
+				width: 100%;
+				height: 600px;
+			}
+		}
+
+		.right {
+			
+			.the-content {
+				background: white;
+				height: 320px;
+				overflow-y: auto;
+
+				.inner {
+					overflow: hidden;
+					padding: 45px 30px 100px;
+				}
+
+				h5 {
+					.fut-heavy;
+					color: @blue;
+					margin-bottom: 10px;
+				}
+
+				p {
+					margin-bottom: 22px;
+					line-height: 22px;
+				}
+
+				.post-sub {
+					color: @blue;
+					margin-bottom: 15px;
+				}
+
+				blockquote {
+					position: relative;
+					padding: 15px;
+					margin-bottom: 22px;
+
+					&:before, &:after {
+						.pseudo;
+						width: 100%;
+						height: 3px;
+						left: 0;
+						background-color: @blue;
+					}
+
+					&:before {
+						top: 0;
+					}
+
+					&:after {
+						bottom: 0;
+					}
+
+					p {
+						font-size: 24px;
+						color: @blue;
+						.fut-book;
+						line-height: 33px;
+						margin-bottom: 0;
+					}
+				}
+
+				img {
+					border: 10px solid @light-blue;
+					margin-top: 22px;
+					margin-bottom: 19px;
+					max-width: 100%;
+					height: auto!important;
+				}
+			}
+
+		}
+
+		.title-bar {
+			background-color: #33414a;
+			padding: 30px;
+
+			h2 {
+				.fut-heavy;
+				color: white;
+				font-size: 40px;
+			}
+		}
+
+		.info-bar {
+			background-color: @blue;
+			padding: 0 30px;
+			position: relative;
+
+			span {
+				color: white;
+				.fut-book;
+				line-height: 50px;
+
+			}
+
+			.date, .author {
+				.effra-bold;
+				font-size: 12px;
+				text-transform: uppercase;
+
+				&.heading {
+					color: #33414a;
+					margin-right: 5px;
+				}
+
+				&.mr20 {
+					margin-right: 20px;
+				}
+			}
+
+			.info-row {
+				height: 50px;
+				display: block;
+				overflow: hidden;
+
+				h5 {
+					line-height: 50px;
+					.fut-heavy;
+					color: #33414a;
+					font-size: 18px;
+				}
+			}
+
+		}
+
+		&.event {
+
+			.the-content {
+				height: 409px;
+			}
+			.info-bar {
+				padding-left: 125px;
+				height: 100px;
+
+				.date-badge {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100px;
+					height: 125px;
+					background: url(../images/shape-modal-date-polygon.png) no-repeat center;
+					padding-top: 15px;
+					z-index: 20;
+
+					span {
+						color: white;
+						display: block;
+						text-align: center;
+						line-height: 45px;
+						max-width: 80px;
+						margin: 0 auto;
+						.fut-heavy;
+						font-size: 30px;
+						text-transform: uppercase;
+
+						&.top {
+							border-bottom: 1px solid @blue;
+						}
+					}
+				}
+
+			}
+		}
+
+		&.other {
+			.the-content {
+				height: 450px;
+
+				.inner {
+					padding-top: 25px;
+				}
+			}
+		}
+
+	}
+}
+
+
+/*********************
+02. CTAS
+*********************/
+
+.a-cta {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+
+}
+
+
+#find-us-cta {
+	
+	.left, .right {
+		height: 300px;
+
+		.background {
+
+			.ease-special;
+
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			-o-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+
+		&:hover {
+			&:before {
+				opacity: .9;
+			}
+
+			.background {
+				-webkit-transform: scale(1.04) translateZ(0);
+				-moz-transform: scale(1.04) translateZ(0);
+				-o-transform: scale(1.04) translateZ(0);
+				transform: scale(1.04) translateZ(0);
+			}
+		}
+	}
+	.left {
+		width: 66%;
+
+		h5 {
+
+		}
+
+
+	}
+	.right {
+		width: 34%;
+	}
+}
+
+/*********************
+08. Filters
+*********************/
+.a-filter {
+	&:hover {
+		border-color: @blue;
+		background-color: @blue;
+
+		span {
+			color: white;
+		}
+	}
+}
+
+#posts {
+
+	#posts-filter {
+	}
+
+	.a-post {
+
+		&:nth-child(3n+1){
+			clear: left;
+		}
+
+
+		.the-text {
+			padding: 18px;
+
+			.post-title {
+				a {
+				}
+
+				&:hover {
+					a {
+						color: @black1;
+					}
+				}
+			}
+
+			.post-cat, .post-date {
+			}
+
+			p {
+			}
+		}
+
+		.the-img {
+
+			img {
+			}
+		}
+
+	}
+
+} // end #partners
+
+/*********************
+02. Content
+*********************/
+
+.tapingo-section {
+
+	.tapingo-info {
+		width: 1020px;
+	}
+
+	.tapingo-logo {
+		background: url(../images/tapingo-logo.png) no-repeat;
+		width: 493px;
+		height: 75px;
+	}
+
+	.right-content {
+		width: 493px;
+	}
+
+}
+
+.float-container {
+
+	&.wid-920 {
+		width: 940px;
+	}
+
+	&.wid-1000 {
+		width: 1000px;
+	}
+
+}
+
+.fees-info-section {
+
+	.float-container {
+
+		.right-container {
+			width: 490px;
+		}
+
+	}
+
+}
+
+.white-section {
+
+	&.form-section {
+
+		.right-container {
+			width: 660px;
+		}
+
+		form {
+
+			.form-row {
+
+				.form-col {
+					width: 270px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.float-container {
+
+		&.wid-1000 {
+
+			&.card-info-section {
+
+				.right-container {
+					width: 360px;
+					max-width: none;
+
+					.right-title {
+						font-size: 30px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.faq-section {
+		.float-container {
+			.right-container {
+				float: left;
+				margin-left: 50px;
+			}
+		}
+	}
+
+}
+
+#content {
+
+	&.blog {
+
+		&.single {
+			#related-tiles {
+				.a-tile {
+					&:hover {
+						.the-text {
+							-webkit-transform: translate3D(0, -20px, 0);
+							-moz-transform: translate3D(0, -20px, 0);
+							-o-transform: translate3D(0, -20px, 0);
+							transform: translate3D(0, -20px, 0);
+						}
+					}
+				}
+			}
+		}
+
+
+	}
+
+	&.home {
+		
+		#whats-happening {
+			#blue-bar {
+				.black-btn {
+					&:hover {
+						background-color: @gray;
+					}
+				}
+			}
+		}
+
+	}
+
+
+}
+
+/*********************
+ POPUP
+*********************/
+
+#Popup {
+
+	.article-popup {
+		width: 1000px;
+	}
+
+}
+
+/*********************
+02. FOOTER
+*********************/
+
+#card-services-footer { 
+
+	.inner-footer-container {
+		width: 1000px;
+	}
+
+}
+
+#footer {
+
+	.center {
+		padding: 50px 0;
+		max-width: 1080px;
+	}
+
+	.small-text {
+		text-align: center;
+
+		a {
+			color: white;
+		}
+	}
+
+
+	a.gold {
+		.ease1;
+		&:hover {
+			color: @blue;
+		}	
+	}
+
+	.footer-about {
+		width: 40%;
+		float: left;
+
+		p {
+			padding-right: 90px;
+			text-align: left;
+		}
+	}
+
+	.footer-links {
+		width: 60%;
+		float: right;
+
+		.menu {
+		}
+		.link-col {
+
+		}
+
+		.menu-item {
+			a {
+				&:hover {
+					text-decoration:underline;
+				}
+			}
+			
+		}
+	}
+
+	.footer-logo {
+		float: left;
+		margin-top: 75px;
+
+		.small-text {
+			text-align: left;
+		}
+
+		.logo-container {
+			margin: 0 0 19px;
+		}
+	}
+
+	.disclaimer {
+		float: right;
+		margin-top: 77px;
+
+		.small-text {
+			text-align: right;
+		}
+
+		a {
+			cursor: text;
+		}
+	}
+
+
+}

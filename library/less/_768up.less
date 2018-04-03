@@ -1,0 +1,551 @@
+
+/******************************************************************
+	Typography
+******************************************************************/
+
+body {
+	font-size: 15px;
+}
+
+h2 {
+	font-size: 60px;
+	color: @dark-gray;
+	.fut-heavy;
+	text-transform: uppercase;
+}
+
+#field_2_1 {
+	margin-right: 20px;
+}
+
+/*****************
+	Re-usables
+*******************/
+
+
+.black-overlay {
+	position: absolute;
+	.stretch;
+	background: rgba(0,0,0,.5);
+	z-index: 5;
+}
+
+
+/*********************
+06. HEADER SYTLES
+*********************/
+
+/*********************
+06. HEADER SYTLES
+*********************/
+
+#card-services-menu {
+
+	
+}
+
+#header {
+	height: 70px;
+	position: absolute;
+	width: 100%;
+	top: 50px;
+
+	#logo {
+		width: 272px;
+		height: 14px;
+		float: left;
+		margin: 27px 20px 17px 0;
+	}
+
+	.menu-button {
+		display: none;
+		
+	}
+
+}
+
+#gform_fields_2 {
+
+	li {
+		width: 210px;
+		float: left;
+		margin: 0;
+
+		input {
+			width: 100%;
+		}
+
+		&.center-field {
+			margin: 0 20px;
+		}
+	}
+
+}
+
+/*********************
+07. NAVIGATION STYLES
+*********************/
+
+#gray-bar {
+	position: absolute;
+	height: 70px;
+	width: 100%;
+	z-index: 10;
+	background: transparent;
+
+	.center {
+		overflow: hidden;
+		padding: 0 20px;
+		
+	}
+}
+
+#nav-bar {
+	top: 0;
+
+}
+
+// #main-nav {
+// 	width: auto;
+// }
+
+#main-nav {
+	float: right;
+	position: relative;
+	background: transparent;
+	z-index: 10;
+	// top: 40px;
+	width: 50%;
+	right: 0;
+	opacity: 1;
+
+	padding-top: 10px;
+	top: 0;
+
+	-webkit-transform: translate3D(0, 0, 0);
+	-moz-transform: translate3D(0, 0, 0);
+	-o-transform: translate3D(0, 0, 0);
+	transform: translate3D(0, 0, 0);
+
+	.menu-item {
+		display:inline-block;
+		width: auto;
+		padding: 0 10px;
+
+		a {
+			line-height: 50px;
+
+
+			&:after {
+				.ease1;
+			}
+		}
+	}
+}
+
+#gform_fields_2 li:first-child {
+	//margin-right: 20px !important; 
+}
+
+#gform_wrapper_2 {
+	.gform_footer {
+		padding: 0 !important;
+		margin: 0 !important;
+		.text-center;
+	}
+
+	.disclaimer-msg {
+		display: none;
+	}
+}
+
+
+/*********************
+02. CTAS
+*********************/
+
+#keep-up {
+	height: 400px;
+	background: url(../images/background-keep-up.jpg) no-repeat center;
+	background-size: cover;
+
+	h3 {
+		.fut-book;
+		font-size: 2.5em;
+		margin-bottom: 5px;
+		position: relative;
+
+	}
+	h4 {
+		.fut-heavy;
+		font-size: 3.75em;
+		margin-bottom: 30px;
+		
+	}
+	.inner {
+		padding: 111px 20px 0;
+		position: relative;
+		z-index: 10;
+		text-align: center;
+	}
+}
+
+#find-us-cta {
+	
+	.left, .right {
+		height: 300px;
+
+
+
+		.inner {
+			padding-top: 105px;
+		
+		}
+	}
+	.left {
+		width: 50%;
+
+		h5 {
+
+		}
+
+
+	}
+	.right {
+		width: 50%;
+	}
+}
+
+/**********************
+10. Filters
+**********************/
+
+#posts-filter {
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+
+.a-filter {
+	display: inline-block;
+	border: 1px solid #929093;
+	padding: 15px 20px;
+	min-width: 120px;
+	text-align: center;
+	margin: 0 10px;
+	.ease1;
+
+	&.active {
+		border-color: @blue;
+		background-color: @blue;
+
+		span {
+			color: white;
+		}
+	}
+	span {
+		.ease1;
+		.fut-heavy;
+		text-transform: uppercase;
+		color: #929090;
+		font-size: 1em;
+	}
+}
+
+
+#posts {
+	text-align: center;
+	
+
+	.a-post {
+		display: inline-block;
+		
+		width: 100%;
+		max-width: 340px;
+		margin: 15px;
+
+	}
+
+} // end #partners
+
+
+/*********************
+08. CONTENT
+*********************/
+
+.tapingo-section {
+
+	.iphone {
+		width: 480px;
+		margin: 0 auto;
+	}
+
+}
+
+.fees-info-section {
+
+	.float-container {
+
+		.right-container {
+
+			.video-placeholder {
+				height: 400px;
+			}
+
+		}
+
+	}
+
+}
+
+.fairwinds-section {
+
+	.left-side {
+		.center-pad {
+			
+		}
+	}
+
+	img {
+		width: 330px;
+		margin: 0 auto;
+	}
+
+}
+
+.newsletter-sign-up {
+	height: 400px;
+	padding: 0;
+
+	#newsletter-form {
+		width: 670px;
+		margin: 0 auto;
+
+		.form-row {
+
+			.form-col {
+				float: left;
+				margin-right: 20px;
+				margin-top: 0; 
+
+				&.last {
+					margin: 0;
+				}
+
+				input {
+					width: 210px;
+				}
+
+			}
+
+		}
+
+		.checkbox-container {
+			margin: 20px 0 30px;
+		}
+
+		.checkbox-input {
+			width: 383px;
+		}
+
+		.center-pad {
+			padding: 0;
+		}
+
+	}
+
+}
+
+#content {
+
+		
+	& > .center {
+		padding: 70px 0;
+	}
+	
+
+	&.blog {
+
+		#posts-filter {
+			text-align: center;
+			margin: 30px 0;
+		}
+
+		&.single {
+			#related-tiles {
+				.a-tile {
+					width: 50%;
+					float: left;
+					 
+					&.gold {
+					}
+
+					.the-text {
+
+						.inner {
+							&:before {
+							}
+						}
+
+						.post-title {
+
+
+						}
+
+						.date-row {
+						}
+					}
+				}
+			}
+		}
+		
+
+	}
+	
+	// Home Page
+	&.home {
+		
+		#hero {
+			height: 475px;
+	
+			
+			.overlay {
+				.black-overlay;
+			}
+
+			.lockup {
+				width: 767px;
+				height: 267px;
+				position: relative;
+				margin: 0 auto;
+
+				top: 114px;
+			}
+		}
+
+		.partners-wrap {
+			padding: 70px 0;
+		}
+
+
+		#partners {
+			text-align: center;
+			
+			#partners-filter {
+				max-width: 768px;
+				padding-bottom: 30px;
+			}
+			
+			.a-partner {
+				display: inline-block;
+				
+				width: 100%;
+				max-width: 340px;
+				margin: 15px;
+
+			}
+
+		} // end #partners
+
+		
+
+
+	} // end &.home
+
+	// Contact Page
+	&.contact {
+
+		& > .center {
+			padding: 90px 20px;
+		}
+
+
+	} // end &.contact
+}
+
+
+/*********************
+09. PAGE NAVI STYLES
+*********************/
+
+
+/*********************
+13. FOOTER STYLES
+*********************/
+
+#footer {
+
+	.center {
+		padding: 20px;
+		max-width: 800px;
+		text-align: center;
+	}
+
+	.small-text {
+		text-align: center;
+
+		a {
+			color: white;
+		}
+	}
+
+	.footer-about {
+
+		p {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+	}
+
+	.footer-links {
+		display: inline-block;
+		
+		.menu {
+		}
+		.link-col {
+			text-align: left;
+			float: left;
+			position: relative;
+			display: inline-block;
+			width: auto;
+			margin-right: 40px;
+
+			&:nth-child(4) {
+				margin-right: 0;
+			}
+
+		}
+
+		.menu-item {
+			
+			
+		}
+	}
+
+	.footer-logo {
+		float: left;
+
+		.logo-container {
+			margin: 0 0 10px;
+			
+			.small-text {
+				text-align: left;
+			}
+		}
+	}
+
+	.disclaimer {
+		float: right;
+		margin-top: 77px;
+
+		.small-text {
+			text-align: right;
+		}
+	}
+
+}
+
+/*********************
+14. PAGES
+*********************/
