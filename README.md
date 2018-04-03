@@ -9,11 +9,6 @@ This theme is built around Advanced Custom Fields.
 - The Master branch is automatically deployed to the UCFCard QA environment
 - Deployment to production is done manually via Jenkins using release versions
 
-==========
-
-Repository for UCFCard.ucf.edu WordPress theme build, created by Mike Setzer, maintained by Business Services.
-This project includes a full setup of GulpJS and SASS for automation, and Jenkins for deployment.
-
 ## System Preparation
 
 1. [NodeJS](http://nodejs.org) - Use the installer.
