@@ -1,3 +1,7 @@
+[![forthebadge](https://forthebadge.com/images/badges/built-with-wordpress.svg)](http://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
+
 # Business Services Printing WordPress theme
 
 WordPress theme for UCFCard.ucf.edu, created by Mike Setzer, maintained by Business Services.
