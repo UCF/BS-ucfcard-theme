@@ -152,7 +152,7 @@ Template Name: Card Services Home
 							<!-- <div class="id-card" style="background: url(<?php bloginfo('template_directory'); ?>/library/images/ucfCard.png) no-repeat; background-size: cover; background-position: center;"></div> -->
 							
 							<div class="img-container">
-								<img src="<?php bloginfo('template_directory'); ?>/library/images/ucfCard.png" />
+								<img src="<?php bloginfo('template_directory'); ?>/library/images/ucf-card-placeholder.jpg" />
 							</div>
 
 						</div>
