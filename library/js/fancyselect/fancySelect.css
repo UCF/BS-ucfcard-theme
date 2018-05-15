@@ -87,6 +87,7 @@ div.fancy-select ul.options.open {
 	visibility: visible;
 	top: 57px;
 	opacity: 1;
+	overflow: overlay;
 
 	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
 	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
