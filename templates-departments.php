@@ -95,7 +95,7 @@ Template Name: Departments
 								</div>
 							</div>
 
-							<div id="department-form" data-form="ucf-card-id" class="hide-form formly">
+							<div id="department-form" data-form="card-id" class="hide-form formly">
 
 								<?php gravity_form( 3, false, true, false, null, true, null ); ?>
 
