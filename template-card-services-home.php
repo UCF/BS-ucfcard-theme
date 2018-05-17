@@ -276,7 +276,7 @@ Template Name: Card Services Home
 
 							<div class="center-pad">
 
-								<h3 class="newsletter-heading"><?php the_field( 'newsletter_headline', 1130 ); ?></h3>
+								<h3 class="newsletter-heading"><?php the_field( 'newsletter_headline', 21 ); ?></h3>
 
 								<?php gravity_form( 2, false, true, false, null, true, null ); ?>
 
