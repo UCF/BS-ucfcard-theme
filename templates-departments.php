@@ -234,7 +234,7 @@ Template Name: Departments
 
 		} );
 
-		$('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
+		$('#input_6_4, #input_7_5, #input_8_4, #input_3_4, select').fancySelect();
 
 		// $('input[name=payee]').on( 'change', function() {
 
@@ -264,7 +264,7 @@ Template Name: Departments
 			$('.gfield_list_14_cell1').find('input').attr( 'placeholder', 'First Name*' );
 			$('.gfield_list_14_cell2').find('input').attr( 'placeholder', 'Last Name*' );
 			$('.gfield_list_14_cell3').find('input').attr( 'placeholder', 'UCF ID Number*' );
-			$('#input_6_4, #input_8_4, select').fancySelect();
+			$('#input_6_4, #input_7_5, #input_8_4, select').fancySelect();
 			$('.gfield_radio input').iCheck( { radioClass: 'iradio_flat-yellow' } );
 	    });
 
