@@ -55,7 +55,7 @@ Template Name: Departments
 									<a href="#" data-form="ucf-card-id">UCF Card</a>
 								</li>
 								<li>
-									<a href="#" data-form="visitor-badge">Visitor Badge</a>
+									<a href="#" data-form="visitor">Visitor Badge</a>
 								</li>
 								<li>
 									<a href="#" data-form="nursing">Nursing Badge</a>
@@ -205,9 +205,9 @@ Template Name: Departments
 
 						case 'visitor-badge':
 
-							$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
-				    		$('#department-form5').fadeIn( 500 ).addClass( 'active' );
-				    	} );
+								$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
+									$('#department-form5').fadeIn( 500 ).addClass( 'active' );
+								} );
 
 						break;
 
