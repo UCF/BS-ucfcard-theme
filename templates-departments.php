@@ -55,6 +55,9 @@ Template Name: Departments
 									<a href="#" data-form="ucf-card-id">UCF Card</a>
 								</li>
 								<li>
+									<a href="#" data-form="visitor-badge">Visitor Badge</a>
+								</li>
+								<li>
 									<a href="#" data-form="nursing">Nursing Badge</a>
 								</li>
 								<li>
@@ -119,6 +122,14 @@ Template Name: Departments
 							<div id="department-form4" data-form="nursing" class="hide-form formly">
 
 								<?php gravity_form( 6, false, true, false, null, true, null ); ?>
+
+								<div class="clear"></div>
+
+							</div>
+
+							<div id="department-form5" data-form="visitor-badge" class="hide-form formly">
+
+								<?php gravity_form( 7, false, true, false, null, true, null ); ?>
 
 								<div class="clear"></div>
 
@@ -208,6 +219,14 @@ Template Name: Departments
 
 				    break;
 
+						case 'visitor-badge':
+
+							$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
+								$('#department-form5').fadeIn( 500 ).addClass( 'active' );
+							} );
+							
+						break;
+
 				}
 
 			}
@@ -259,15 +278,3 @@ Template Name: Departments
 </script>
 
 <?php get_template_part( 'section', 'card-services-footer' ); ?>
-
-
-
-
-
-
-
-
-
-
-
-
