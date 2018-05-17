@@ -203,6 +203,14 @@ Template Name: Departments
 
 				    break;
 
+						case 'visitor-badge':
+
+							$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
+				    		$('#department-form5').fadeIn( 500 ).addClass( 'active' );
+				    	} );
+
+						break;
+
 				    case 'police-department':
 
 				    	$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
@@ -218,14 +226,6 @@ Template Name: Departments
 				    	} );
 
 				    break;
-
-						case 'visitor-badge':
-
-							$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
-								$('#department-form5').fadeIn( 500 ).addClass( 'active' );
-							} );
-							
-						break;
 
 				}
 
