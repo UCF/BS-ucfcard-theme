@@ -163,7 +163,7 @@ Template Name: Departments
 
 		$('.gfield_radio input').iCheck( { radioClass: 'iradio_flat-yellow' } );
 
-		$('#gform_wrapper_4').show();
+		$('#gform_wrapper_3').show();
 
 		$('.excel-link').attr( 'href', "<?php echo THEME_URL . '/library/includes/docs/Nursing Template.xlsx'; ?>" )
 
