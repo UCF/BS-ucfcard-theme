@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          "wp-content/themes/CARD_SERVICES/library/css/style.css": "wp-content/themes/CARD_SERVICES/library/less/style.less"
+          "library/css/style.css": "library/less/style.less"
           // "wp-content/themes/CARD_SERVICES/library/css/ie.css": "wp-content/themes/CARD_SERVICES/library/less/ie.less"
         }
       }
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 
     watch: {
       styles: {
-        files: ['wp-content/themes/CARD_SERVICES/library/less/**/*.less'], // which files to watch
+        files: ['library/less/**/*.less'], // which files to watch
         tasks: [ 'less' ],
         options: {
           nospawn: true
