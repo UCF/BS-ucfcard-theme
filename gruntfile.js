@@ -1,9 +1,10 @@
 module.exports = function(grunt) {
+  require('jit-grunt')(grunt);
+
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
-
     less: {
       development: {
         options: {
