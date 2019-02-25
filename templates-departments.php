@@ -165,7 +165,7 @@ Template Name: Departments
 
 		$('#gform_wrapper_3').show();
 
-		$('.excel-link').attr( 'href', "<?php echo THEME_URL . '/library/includes/docs/Nursing Template.xlsx'; ?>" )
+		$('.excel-link').attr( 'href', "<?php echo THEME_URL . '/library/includes/docs/Nursing Template.xlsx'; ?>" );
 
 		$('.form-nav ul li a').on( 'click', function(evt) {
 
@@ -278,15 +278,3 @@ Template Name: Departments
 </script>
 
 <?php get_template_part( 'section', 'card-services-footer' ); ?>
-
-
-
-
-
-
-
-
-
-
-
-

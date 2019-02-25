@@ -77,6 +77,5 @@
 
 <article id="wrap">
 
-
-<?php get_template_part( 'section', 'card-services-header' ); ?>
+	<?php get_template_part( 'section', 'card-services-header' ); ?>
 

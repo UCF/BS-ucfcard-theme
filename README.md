@@ -16,13 +16,13 @@ This theme is built around Advanced Custom Fields.
 ## System Preparation
 
 1. [NodeJS](http://nodejs.org) - Use the installer.
-2. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo)
-3. [LibSass](http://sass-lang.com/libsass)
+2. [GruntJS](https://github.com/gruntjs/grunt) - `$ npm install -g grunt-cli` (mac users may need sudo)
 
 ## Local Installation
 
 1. Clone this repo or download it into a directory of your choice.
 2. `$ cd` into the directory and run `$ npm install`.
+3. Run `npm install grunt --save-dev`
 
 ## Usage
 
