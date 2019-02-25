@@ -16,7 +16,7 @@ Template Name: Distance Learning
 
 				<div class="inner">
 					<div class="header-quote">Distance Learning &amp;</div>
-					<div class="header-sub-heading">Regional Campuses</div>
+					<div class="header-sub-heading">UCF Connect</div>
 				</div>
 
 			</div>
