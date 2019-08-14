@@ -97,7 +97,7 @@ Template Name: Distance Learning
 							);
 
 							$locations = get_posts( $location_args );
-							$loc_counter = 1;
+							$loc_counter = 0;
 							$backup_loc_counter = 0;
 							$total_locations = count( $locations );
 						?>
@@ -148,7 +148,7 @@ Template Name: Distance Learning
 									} else {
 
 										if ( $loc_counter == 3 ) {
-											$loc_counter = 1;
+											$loc_counter = 0;
 											echo '<div class="clear"></div></div>';
 
 											$remaining_locs = $total_locations - $backup_loc_counter;
