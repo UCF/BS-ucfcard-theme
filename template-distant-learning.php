@@ -153,7 +153,7 @@ Template Name: Distance Learning
 
 											$remaining_locs = $total_locations - $backup_loc_counter;
 
-											if ( $remaining_locs >= 3 ) {
+											if ( $remaining_locs > 3 ) {
 												echo '<div class="module-row three-row">';
 											} else {
 												echo '<div class="module-row">';
