@@ -97,7 +97,7 @@ Template Name: Distance Learning
 							);
 
 							$locations = get_posts( $location_args );
-							$loc_counter = 0;
+							$loc_counter = 1;
 							$backup_loc_counter = 0;
 							$total_locations = count( $locations );
 						?>
