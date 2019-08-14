@@ -748,15 +748,3 @@ Template Name: Knight Cash
 
 
 <?php get_template_part( 'section', 'card-services-footer' ); ?>
-
-
-
-
-
-
-
-
-
-
-
-

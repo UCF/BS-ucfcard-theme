@@ -228,15 +228,3 @@ Template Name: Distance Learning
 
 
 <?php get_template_part( 'section', 'card-services-footer' ); ?>
-
-
-
-
-
-
-
-
-
-
-
-
