@@ -28,7 +28,10 @@
     "url": "https://github.com/UCF/BS-printing-theme/issues"
   },
   "homepage": "https://github.com/UCF/BS-printing-theme#readme",
-  "dependencies": {},
+  "dependencies": {
+    "diff": "^3.5.0",
+    "extend": "^3.0.2"
+  },
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-jshint": "~2.1.0",
