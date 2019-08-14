@@ -98,13 +98,13 @@ Template Name: Distance Learning
 
 							$locations = get_posts( $location_args );
 							$loc_counter = 0;
-							$backup_loc_counter = 1;
+							$backup_loc_counter = 0;
 							$total_locations = count( $locations );
 						?>
 
 						<div class="module-row three-row">
 
-							<?php foreach ( $locations as $location ) { 
+							<?php foreach ( $locations as $location ) {
 
 								$thumb = wp_get_attachment_image_src(get_post_thumbnail_id( $location->ID ), 'post-thumbnail');
 
@@ -153,7 +153,7 @@ Template Name: Distance Learning
 
 											$remaining_locs = $total_locations - $backup_loc_counter;
 
-											if ( $remaining_locs > 3 ) {
+											if ( $remaining_locs >= 3 ) {
 												echo '<div class="module-row three-row">';
 											} else {
 												echo '<div class="module-row">';
