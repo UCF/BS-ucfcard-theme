@@ -87,6 +87,11 @@ Template Name: Knight Cash
 						</div>
 
 						<div class="panel-wrap">
+							<h3 class="info-panel-title"><?php the_field( 'second_right_panel_title' ); ?></h3>
+							<div class="fees-info"><?php the_field( 'second_right_panel_content' ); ?></div>
+						</div>
+
+						<div class="panel-wrap">
 
 							<h3 class="info-panel-title no-margin-bottom"><?php the_field( 'step_by_step_title' ); ?></h3>
 
