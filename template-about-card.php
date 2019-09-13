@@ -126,7 +126,7 @@ Template Name: Card Services About Card
 
 		<section class="fairwinds-section">
 
-			<div class="left-side" style="background: url(https://ucfcard.ucf.edu/wp-content/themes/CARD_SERVICES4/library/images/fairwind-bg.jpg) no-repeat; background-size: cover; background-position: center;">
+			<div class="left-side" style="background: url(<?php bloginfo('template_directory'); ?>/library/images/fairwind-bg.jpg) no-repeat; background-size: cover; background-position: center;">
 
 				<div class="center-pad">
 					<img src="<?php bloginfo('template_directory'); ?>/library/images/fairwinds-logo.png" />
