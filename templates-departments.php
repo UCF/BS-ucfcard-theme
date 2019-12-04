@@ -49,7 +49,7 @@ Template Name: Departments
 
 							<ul>
 								<li>
-									<a href="#" class="active" data-form="department-badge">Department Cards</a>
+									<a href="#" class="active" data-form="department-badge">Department Badge</a>
 								</li>
 								<li>
 									<a href="#" data-form="ucf-card-id">UCF Card</a>
