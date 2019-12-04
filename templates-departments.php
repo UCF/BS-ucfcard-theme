@@ -49,16 +49,13 @@ Template Name: Departments
 
 							<ul>
 								<li>
-									<a href="#" class="active" data-form="department-badge">Department Card/Badge</a>
+									<a href="#" class="active" data-form="department-badge">Department Cards</a>
 								</li>
 								<li>
 									<a href="#" data-form="ucf-card-id">UCF Card</a>
 								</li>
 								<li>
 									<a href="#" data-form="nursing">Nursing Badge</a>
-								</li>
-								<li>
-									<a href="#" data-form="police-department">Police Department</a>
 								</li>
 							</ul>
 
@@ -103,14 +100,6 @@ Template Name: Departments
 							<div id="department-form2" data-form="department-badge" class="active formly">
 
 								<?php gravity_form( 4, false, true, false, null, true, null ); ?>
-
-								<div class="clear"></div>
-
-							</div>
-
-							<div id="department-form3" data-form="police-department" class="hide-form formly">
-
-								<?php gravity_form( 5, false, true, false, null, true, null ); ?>
 
 								<div class="clear"></div>
 
