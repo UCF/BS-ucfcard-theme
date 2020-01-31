@@ -11,7 +11,7 @@ if(!defined('THEME_URL'))
 //require_once( TEMPLATEPATH.'/library/includes/mysql-replace.php' );
 //MySQL_Replace::replace('old', 'new');
 
-//	dependicies
+//	dependencies
 require_once( TEMPLATEPATH.'/library/includes/wp-header-remove.php' );
 require_once( TEMPLATEPATH.'/library/includes/ajax/loading_functions.php' );
 

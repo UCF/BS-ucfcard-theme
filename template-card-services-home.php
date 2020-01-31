@@ -53,7 +53,7 @@ Template Name: Card Services Home
 					</div>
 
 				</section> <?php /* End Top CTAs Section */ ?>
-				<div class="clear"></div>
+                <div class="clear"></div>
 			<?php } ?>
 
 		<?php /* =- =- =- =- =- =- =- = =- 
