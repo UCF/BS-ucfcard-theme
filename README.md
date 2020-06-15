@@ -1,11 +1,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-wordpress.svg)](http://forthebadge.com) 
-[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](http://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
 
 # Business Services Printing WordPress theme
 
-WordPress theme for UCFCard.ucf.edu, created by Mike Setzer, maintained by Business Services.
-This theme is built around Advanced Custom Fields.
+Repository for UCFCard.ucf.edu WordPress theme build, created by Mike Setzer, maintained by Business Services.
+This project includes a full setup of GruntJS and LESS for automation, and Jenkins for deployment.
 
 ## Deployment
 
@@ -15,8 +13,19 @@ This theme is built around Advanced Custom Fields.
 
 ## System Preparation
 
-1. [NodeJS](http://nodejs.org) - Use the installer.
-2. [GruntJS](https://github.com/gruntjs/grunt) - `$ npm install -g grunt-cli` (mac users may need sudo)
+1. [NodeJS](https://nodejs.org) - Use the installer.
+2. [GruntJS](https://github.com/gruntjs/grunt) - `$ npm install grunt grunt-cli` (mac users may need sudo)
+3. [LESS](https://github.com/less/less.js) - `$ npm install -g less` (mac users may need sudo)
+
+## Getting Started
+1. If needed, [install](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm) `node` and `npm` (Node Package Manager).
+- If needed, install `grunt` with `npm install grunt grunt-cli`.
+- Clone this repo with `git clone https://github.com/UCF/BS-officeplus-theme` or download the zip.
+- In terminal, `cd` to the folder containing your project. Alternatively, you can type `cd ` and drag the location of the folder into your terminal and hit enter (on Macs).
+- In terminal, type `npm install`. If (and _only_ if) `npm install` isn't working, try `sudo npm install`. This should install all [dependencies](#dependencies).
+- In terminal, enter `grunt default`.
+- Your LESS files will be compiled and minified to `lib/styles.css`
+- Keep `grunt` running while you're making changes. When you want to stop the gulp task, hit `ctrl + C`.
 
 ## Local Installation
 
@@ -31,7 +40,7 @@ This theme is built around Advanced Custom Fields.
 This will give you file watching, auto-rebuild, and CSS injection.
 
 ```shell
-$ gulp
+$ grunt default
 ```
 
 ## WordPress modularization
@@ -55,7 +64,6 @@ If you are modifying a plugin's CSS, eg. GravityForms, simply:
 - **Be sure to update the style.css with the version on new releases.**
 
 ## Features
-- Sass linting (based on [default](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) config)
 - Autoprefixer configuration
 - SMACSS and Atomic Design-based folder structure
 - `px` to `em`, `px` to `rem` and other useful functions.
@@ -78,11 +86,6 @@ If you are modifying a plugin's CSS, eg. GravityForms, simply:
 ```
 
 ## Tasks
-- styles
-- sass-lint
-- watch
 - default
-  - styles
-  - watch
 - build
   - styles
