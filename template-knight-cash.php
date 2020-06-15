@@ -314,10 +314,6 @@ Template Name: Knight Cash
 
 				</div>
 
-				<!-- <div class="iphone"></div> -->
-
-				<img class="iphone" src="<?php bloginfo('template_directory'); ?>/library/images/tapingo-iphone.png" />
-
 				<div class="clear"></div>
 
 			</div>
