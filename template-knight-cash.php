@@ -298,21 +298,10 @@ Template Name: Knight Cash
 
 			<div class="tapingo-info">
 
-				<div class="right-content">
-
-					<div class="outer">
-						<div class="inner">
-
 							<div class="center-pad">
 								<img src="<?php bloginfo('template_directory'); ?>/library/images/debitrestaurants.jpg" />
                                 <div class="clear"></div>
 							</div>
-
-
-						</div>
-					</div>
-
-				</div>
 
 				<div class="clear"></div>
 
