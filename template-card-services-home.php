@@ -197,7 +197,7 @@ Template Name: Card Services Home
 
 							$post_args = array(
 								'post_type' => 'post',
-								'posts_per_page' => 4,
+								'posts_per_page' => 6,
 								'order' => 'DESC',
 								'orderby' => 'ID',
 								'post_status' => 'publish'

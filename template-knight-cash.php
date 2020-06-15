@@ -304,23 +304,10 @@ Template Name: Knight Cash
 						<div class="inner">
 
 							<div class="center-pad">
-								<img src="<?php bloginfo('template_directory'); ?>/library/images/tapingo-logo.png" />
-								<!-- <div class="tapingo-logo"></div> -->
-
-								<div class="tapingo-desc">
-									<p>The Tapingo App now accepts Knight Cash as a form of payment when placing your pickup or delivery order. Skip the line, order with Tapingo and pay with Knight Cash!</p>
-								</div>
-
-								<div class="app-store-btns">
-									<a href="http://itunes.apple.com/app/id423822370" target="_blank" class="app-btn iphone-btn">
-										<div class="app-btn-hovered"></div>
-									</a>
-									<a href="https://play.google.com/store/apps/details?id=com.tapingo" target="_blank" class="app-btn android-btn">
-										<div class="app-btn-hovered"></div>
-									</a>
-									<div class="clear"></div>
-								</div>
+								<img src="<?php bloginfo('template_directory'); ?>/library/images/debitrestaurants.jpg" />
+                                <div class="clear"></div>
 							</div>
+
 
 						</div>
 					</div>
