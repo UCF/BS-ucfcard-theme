@@ -223,8 +223,8 @@ Template Name: Card Services Home
 
                                         <div class="post-content">
                                             <?php
-                                            if ( strlen( $post->post_content ) > 70 ) {
-                                                echo substr( $post->post_content, 0, 70 ) . '...';
+                                            if ( strlen( $post->post_content ) > 50 ) {
+                                                echo substr( $post->post_content, 0, 50 ) . '...';
                                             } else {
                                                 echo $post->post_content;
                                             }
