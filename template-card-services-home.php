@@ -207,36 +207,36 @@ Template Name: Card Services Home
 
 							$post_counter = 1;
 
-							foreach ( $posts as $post ) { ?>
-								<li data-post-id="<?php echo $post->ID; ?>" class="<?php if ( $post_counter & 1 ) { echo 'first'; }  ?><?php if ( $post_counter == 1 || $post_counter == 2 ) { echo ' top'; } ?>">
+                        foreach ( $posts as $post ) { ?>
+                            <li data-post-id="<?php echo $post->ID; ?>" class="<?php if ( $post_counter & 1 ) { echo 'first'; }  ?><?php if ( $post_counter == 1 || $post_counter == 2 ) { echo ' top'; } ?>">
 
-									<article class="post-container" data-post-id="<?php echo $post->ID; ?>">
+                                <article class="post-container" data-post-id="<?php echo $post->ID; ?>">
 
-										<?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'post-thumbnail'); ?>
-										<a href="#" class="post-header" style="background: url(<?php echo $thumb['0']; ?>) no-repeat; background-size: cover; background-position: center;">
-											<div class="overlay"></div>
-										</a>
+                                    <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'post-thumbnail'); ?>
+                                    <a href="#" class="post-header" style="background: url(<?php echo $thumb['0']; ?>) no-repeat; background-size: cover; background-position: center;">
+                                        <div class="overlay"></div>
+                                    </a>
 
-										<div class="post-content-container">
+                                    <div class="post-content-container">
 
-											<a href="#" class="post-title"><?php echo $post->post_title; ?></a>
+                                        <a href="#" class="post-title"><?php echo $post->post_title; ?></a>
 
-											<div class="post-content">
-												<?php 
-													if ( strlen( $post->post_content ) > 150 ) {
-														echo substr( $post->post_content, 0, 150 ) . '...';
-													} else {
-														echo $post->post_content; 
-													}
-												?>
-											</div>
+                                        <div class="post-content">
+                                            <?php
+                                            if ( strlen( $post->post_content ) > 50 ) {
+                                                echo substr( $post->post_content, 0, 50 ) . '...';
+                                            } else {
+                                                echo $post->post_content;
+                                            }
+                                            ?>
+                                        </div>
 
-										</div>
+                                    </div>
 
-									</article>
+                                </article>
 
-								</li>
-							<?php $post_counter++; }
+                            </li>
+                            <?php $post_counter++; }
 
 						?>
 
