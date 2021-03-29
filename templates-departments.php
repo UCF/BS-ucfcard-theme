@@ -157,6 +157,8 @@ Template Name: Departments
 
 		$('.form-nav ul li a').on( 'click', function(evt) {
 
+			evt.preventDefault();
+
 			if ( !$(this).hasClass( 'active' ) ) {
 
 				//Clear Form Errors
