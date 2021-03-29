@@ -94,7 +94,7 @@ Template Name: Departments
 
 							<div id="department-form" data-form="card-id" class="hide-form formly">
 
-								<?php gravity_form( 3, false, true, false, null, true,'' ,null ); ?>
+								<?php gravity_form( 3, false, true, false, null, true, null ); ?>
 
 								<div class="clear"></div>
 
@@ -102,7 +102,7 @@ Template Name: Departments
 
 							<div id="department-form2" data-form="department-badge" class="active formly">
 
-								<?php gravity_form( 4, false, true, false, null, true,'', null ); ?>
+								<?php gravity_form( 4, false, true, false, null, true, null ); ?>
 
 								<div class="clear"></div>
 
@@ -110,7 +110,7 @@ Template Name: Departments
 
 							<div id="department-form4" data-form="nursing" class="hide-form formly">
 
-								<?php gravity_form( 6, false, true, false, null, true,'', null ); ?>
+								<?php gravity_form( 6, false, true, false, null, true, null ); ?>
 
 								<div class="clear"></div>
 
@@ -118,7 +118,7 @@ Template Name: Departments
 
                             <div id="department-form3" data-form="nursing" class="hide-form formly">
 
-                                <?php gravity_form( 8, false, true, false, null, true,'', null ); ?>
+                                <?php gravity_form( 8, false, true, false, null, true, null ); ?>
 
                                 <div class="clear"></div>
 
