@@ -10,7 +10,7 @@ Template Name: Departments
 
 	<div id="card-service-wrap">
 
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 			HEADER
 
@@ -29,7 +29,7 @@ Template Name: Departments
 		</section> <?php /* END Newsletter Section */ ?>
 
 
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 				FORMS SECTION
 
@@ -57,6 +57,9 @@ Template Name: Departments
 								<li>
 									<a href="#" data-form="nursing">Nursing Badge</a>
 								</li>
+                                <li>
+                                    <a href="#" data-form ="mailing">Card Mailing</a>
+                                </li>
 							</ul>
 
 						</div>
@@ -112,6 +115,14 @@ Template Name: Departments
 								<div class="clear"></div>
 
 							</div>
+
+                            <div id="department-form3" data-form="nursing" class="hide-form formly">
+
+                                <?php gravity_form( 8, false, true, false, null, true, null ); ?>
+
+                                <div class="clear"></div>
+
+                            </div>
 
 						</div>
 
@@ -180,7 +191,7 @@ Template Name: Departments
 
 				    break;
 
-				    case 'police-department':
+				    case 'mailing':
 
 				    	$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
 				    		$('#department-form3').fadeIn( 500 ).addClass( 'active' );
