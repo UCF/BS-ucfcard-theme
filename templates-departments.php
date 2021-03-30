@@ -166,6 +166,7 @@ Template Name: Departments
 
 				$('#department-form').trigger("reset");
 
+				//Change Selected Nav item class type to active
 				$('.form-nav ul li a.active').removeClass( 'active' );
 				$(this).addClass( 'active' );
 
