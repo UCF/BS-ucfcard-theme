@@ -155,6 +155,8 @@ Template Name: Departments
 
 		$('.excel-link').attr( 'href', "<?php echo THEME_URL . '/library/includes/docs/Nursing Template.xlsx'; ?>" );
 
+		$('#department-form').on( 'keyup', function(gform_input_change));
+
 		$('.form-nav ul li a').on( 'click', function(evt) {
 
 			evt.preventDefault();
@@ -164,7 +166,7 @@ Template Name: Departments
 				//Clear Form Errors
 				$('#department-form').find('.error').removeClass('error');
 
-				
+				$('#department-form').trigger("reset");
 
 				$('.form-nav ul li a.active').removeClass( 'active' );
 				$(this).addClass( 'active' );
