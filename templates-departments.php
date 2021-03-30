@@ -155,6 +155,7 @@ Template Name: Departments
 
 		$('.excel-link').attr( 'href', "<?php echo THEME_URL . '/library/includes/docs/Nursing Template.xlsx'; ?>" );
 
+        //Function to enable switching between forms via NAV
 		$('.form-nav ul li a').on( 'click', function(evt) {
 
 			evt.preventDefault();
@@ -214,7 +215,14 @@ Template Name: Departments
 
 		} );
 
-        $('#department-form').on( 'change', function(gf_input_change));
+        //Function to enable Conditional Logic on page
+        $('#department-form').on( 'change', function(evt){
+            evt.gf_input_change();
+
+            //Clear Form Errors
+            $('#department-form').find('.error').removeClass('error');
+            $('#department-form').trigger("reset");
+        });
 
         $('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
 
