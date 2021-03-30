@@ -164,7 +164,7 @@ Template Name: Departments
 				//Clear Form Errors
 				$('#department-form').find('.error').removeClass('error');
 
-				$('#department-form').trigger("reset");
+				
 
 				$('.form-nav ul li a.active').removeClass( 'active' );
 				$(this).addClass( 'active' );
@@ -214,7 +214,7 @@ Template Name: Departments
 
 		} );
 
-		$('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
+        $('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
 
 		// $('input[name=payee]').on( 'change', function() {
 
