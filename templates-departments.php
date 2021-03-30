@@ -216,7 +216,7 @@ Template Name: Departments
 		} );
 
         //Function to enable Conditional Logic on page
-        $('#department-forms-main-wrap').on( 'change', function(gf_input_change));
+        jQuery.noConflict($('#department-forms-main-wrap').on( 'change', function(gf_input_change)));
         /*$('#department-form').on( 'keyup', function(evt){
             $('#department-form').gf_input_change();
 
