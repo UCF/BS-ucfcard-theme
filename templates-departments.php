@@ -163,6 +163,7 @@ Template Name: Departments
 
 				//Clear Form Errors
 				$('#department-form').find('.error').removeClass('error');
+
 				$('#department-form').trigger("reset");
 
 				//Change Selected Nav item class type to active
@@ -214,7 +215,7 @@ Template Name: Departments
 
 		} );
 
-        $('#department-form').keyup(gform_input_change);
+        $('#department-form').on( 'keyup', function(gform_input_change));
 
         $('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
 
