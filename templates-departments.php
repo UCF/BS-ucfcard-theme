@@ -215,9 +215,7 @@ Template Name: Departments
 
 		} );
 
-        $('#department-form').on( 'keyup', function(gform_input_change){
-            
-        });
+        $('#department-form').on( 'keyup', function(gform_input_change));
 
         $('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
 
