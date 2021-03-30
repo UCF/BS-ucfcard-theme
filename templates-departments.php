@@ -155,8 +155,6 @@ Template Name: Departments
 
 		$('.excel-link').attr( 'href', "<?php echo THEME_URL . '/library/includes/docs/Nursing Template.xlsx'; ?>" );
 
-		$('#department-form').on( 'keyup', function(gform_input_change));
-
 		$('.form-nav ul li a').on( 'click', function(evt) {
 
 			evt.preventDefault();
@@ -215,6 +213,8 @@ Template Name: Departments
 
 
 		} );
+
+        $('#department-form').on( 'keyup', function(gform_input_change));
 
         $('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
 
