@@ -216,14 +216,14 @@ Template Name: Departments
 		} );
 
         //Function to enable Conditional Logic on page
-        //$('#department-form').on( 'change', function(gf_input_change));
-        $('#department-form').on( 'keyup', function(evt){
+        $('#department-forms-main-wrap').on( 'change', function(gf_input_change));
+        /*$('#department-form').on( 'keyup', function(evt){
             $('#department-form').gf_input_change();
 
             //Clear Form Errors
             $('#department-form').find('.error').removeClass('error');
             $('#department-form').trigger("reset");
-        });
+        });*/
 
         $('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
 
