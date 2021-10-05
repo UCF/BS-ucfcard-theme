@@ -9,7 +9,7 @@ Template Name: Card Services Home
 <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
 	<div id="card-service-wrap">
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 				TOP CTAS
 
@@ -56,7 +56,7 @@ Template Name: Card Services Home
                 <div class="clear"></div>
 			<?php } ?>
 
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 				WELCOME SECTION
 
@@ -77,21 +77,21 @@ Template Name: Card Services Home
 				</section> <?php /* End Welcome Section */ ?>
 			<?php } ?>
 
-			<?php /* =- =- =- =- =- =- =- = =- 
+			<?php /* =- =- =- =- =- =- =- = =-
 
 				INFO SECTION
 
 			=- =- =- =- =- =- =- =- =- =- =- */ ?>
 
-			<?php 
-				$services = get_field( 'services' ); 
+			<?php
+				$services = get_field( 'services' );
 
 				if ( !empty( $services ) ) { ?>
 
 					<section class="info-section bubs" style="background: url(<?php bloginfo('template_directory'); ?>/library/images/bubs-bg.jpg) no-repeat; background-size: cover; background-position: center;">
 						<div class="overlay"></div>
 
-						<div class="section-info-container">	
+						<div class="section-info-container">
 							<div class="center-pad">
 
 								<h2 class="section-title"><?php the_field( 'our_services_title' ); ?></h2>
@@ -123,10 +123,10 @@ Template Name: Card Services Home
 
 					</section> <?php /* End Info Section */ ?>
 
-				<?php } 
+				<?php }
 			?>
 
-			<?php /* =- =- =- =- =- =- =- = =- 
+			<?php /* =- =- =- =- =- =- =- = =-
 
 				UCF CARD SECTION
 
@@ -150,7 +150,7 @@ Template Name: Card Services Home
 						<div class="left-container">
 
 							<!-- <div class="id-card" style="background: url(<?php bloginfo('template_directory'); ?>/library/images/ucfCard.png) no-repeat; background-size: cover; background-position: center;"></div> -->
-							
+
 							<div class="img-container">
 								<img src="<?php bloginfo('template_directory'); ?>/library/images/ucf-card-placeholder.jpg" />
 							</div>
@@ -170,7 +170,7 @@ Template Name: Card Services Home
 
 			</section> <?php /* UCF Card Section */ ?>
 
-			<?php /* =- =- =- =- =- =- =- = =- 
+			<?php /* =- =- =- =- =- =- =- = =-
 
 				WHATS NEW SECTION
 
@@ -222,13 +222,13 @@ Template Name: Card Services Home
                                         <a href="#" class="post-title"><?php echo $post->post_title; ?></a>
 
                                         <div class="post-content">
-                                            <?php
+                                            <!--<?php
                                             if ( strlen( $post->post_content ) > 50 ) {
                                                 echo substr( $post->post_content, 0, 50 ) . '...';
                                             } else {
                                                 echo $post->post_content;
                                             }
-                                            ?>
+                                            ?>-->
                                         </div>
 
                                     </div>
@@ -255,7 +255,7 @@ Template Name: Card Services Home
 
 			</section> <?php /* End Whats New Section */ ?>
 
-			<?php /* =- =- =- =- =- =- =- = =- 
+			<?php /* =- =- =- =- =- =- =- = =-
 
 				NEWSLETTER SIGN UP SECTION
 
@@ -309,7 +309,7 @@ Template Name: Card Services Home
 </script>
 
 <script type="text/javascript">
-	
+
 	jQuery(document).ready(function($) {
 
 		$(document).bind('gform_post_render', function() {
@@ -331,7 +331,7 @@ Template Name: Card Services Home
 				/* Get Post ID */
 				$article_ID = $(this).parent().parent().data( 'post-id' );
 
-				/* Send Form */	
+				/* Send Form */
 				$.ajax({
 					url: ajax_url,
 					type: 'POST',
@@ -372,7 +372,7 @@ Template Name: Card Services Home
 			/* Get Post Offset */
 			$offset = $('.post-list li').length;
 
-			/* Send Form */	
+			/* Send Form */
 			$.ajax({
 				url: ajax_url,
 				type: 'POST',
