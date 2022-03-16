@@ -10,14 +10,14 @@ Template Name: Card Services Contact
 
 	<div id="card-service-wrap">
 
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 				GOOGLE MAP
 
 			=- =- =- =- =- =- =- =- =- =- =- */ ?>
 
 		<div class="map-container">
-			
+
 			<div class="overlay"></div>
 
 			<section id="map"></section>
@@ -25,7 +25,7 @@ Template Name: Card Services Contact
 		</div>
 
 
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 				FAQ Section
 
@@ -43,7 +43,7 @@ Template Name: Card Services Contact
 
 							<ul class="faq-list">
 
-								<?php 
+								<?php
 
 									$faq_cats = get_terms( 'faq_category' );
 
@@ -104,6 +104,8 @@ Template Name: Card Services Contact
 							<div class="faq-social-icons">
 								<a target="_blank" href="<?php echo get_field( 'twitter_link', 735 ); ?>" class="social-icon tw"></a>
 								<a target="_blank" href="<?php echo get_field( 'facebook_link', 735 ); ?>" class="social-icon fb"></a>
+                                <a target="_blank" href="<?php echo get_field( 'instagram_link', 735 ); ?>"
+                                   class="social-icon insta"></a>
 								<div class="clear"></div>
 							</div>
 
@@ -118,7 +120,7 @@ Template Name: Card Services Contact
 							</div>
 
 							<div class="badge-block" style="background: url(<?php the_field( 'badge_background_image' ); ?>) no-repeat; background-size: cover; background-position: center;">
-								
+
 								<div class="overlay"></div>
 
 								<div class="outer">
@@ -206,7 +208,7 @@ Template Name: Card Services Contact
         var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
         //Activate map style
-		var mapType = new google.maps.StyledMapType(mapstyle, {name:"Spry"});    
+		var mapType = new google.maps.StyledMapType(mapstyle, {name:"Spry"});
 		map.mapTypes.set(SPRY_MAP_STYLE, mapType);
 
         //Markers

@@ -15,39 +15,39 @@
 		</div>
 
 		<div class="right-container">
-			
+
 			<ul class="menu-lists">
 
 				<li>
 					<div class="footer-menu-title">Account</div>
-					<?php 
+					<?php
 						wp_nav_menu( array(
-							'theme_location' => 'card-services-footer-account-nav', 
+							'theme_location' => 'card-services-footer-account-nav',
 							'container' => '',
 							'menu_id' => 'card-services-footer-account-nav'
-						) ); 
+						) );
 					?>
 				</li>
 
 				<li>
 					<div class="footer-menu-title">The Card</div>
-					<?php 
+					<?php
 						wp_nav_menu( array(
-							'theme_location' => 'card-services-footer-card-nav', 
+							'theme_location' => 'card-services-footer-card-nav',
 							'container' => '',
 							'menu_id' => 'card-services-footer-card-nav'
-						) ); 
+						) );
 					?>
 				</li>
 
 				<li>
 					<div class="footer-menu-title">Help</div>
-					<?php 
+					<?php
 						wp_nav_menu( array(
-							'theme_location' => 'card-services-footer-help-nav', 
+							'theme_location' => 'card-services-footer-help-nav',
 							'container' => '',
 							'menu_id' => 'card-services-footer-help-nav'
-						) ); 
+						) );
 					?>
 				</li>
 
@@ -56,6 +56,8 @@
 					<div class="footer-social-icon-container">
 						<a target="_blank" href="<?php echo get_field( 'twitter_link', 735 ); ?>" class="footer-social-icon tw"></a>
 						<a target="_blank" href="<?php echo get_field( 'facebook_link', 735 ); ?>" class="footer-social-icon fb"></a>
+                        <a target="_blank" href="<?php echo get_field( 'instagram_link', 735 ); ?>"
+                           class="footer-social-icon insta"></a>
 						<div class="clear"></div>
 					</div>
 
