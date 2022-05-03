@@ -10,7 +10,7 @@ Template Name: Departments
 
 	<div id="card-service-wrap">
 
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 			HEADER
 
@@ -29,7 +29,7 @@ Template Name: Departments
 		</section> <?php /* END Newsletter Section */ ?>
 
 
-		<?php /* =- =- =- =- =- =- =- = =- 
+		<?php /* =- =- =- =- =- =- =- = =-
 
 				FORMS SECTION
 
@@ -57,6 +57,9 @@ Template Name: Departments
 								<li>
 									<a href="#" data-form="nursing">Nursing Badge</a>
 								</li>
+                                <li>
+                                    <a href="#" data-form ="mailing">Card Mailing</a>
+                                </li>
 							</ul>
 
 						</div>
@@ -113,6 +116,14 @@ Template Name: Departments
 
 							</div>
 
+                            <div id="department-form3" data-form="nursing" class="hide-form formly">
+
+                                <?php gravity_form( 8, false, true, false, null, true, null ); ?>
+
+                                <div class="clear"></div>
+
+                            </div>
+
 						</div>
 
 					</div>
@@ -144,7 +155,8 @@ Template Name: Departments
 
 		$('.excel-link').attr( 'href', "<?php echo THEME_URL . '/library/includes/docs/Nursing Template.xlsx'; ?>" );
 
-		$('.form-nav ul li a').on( 'click', function(evt) {
+        //Function to enable switching between forms via NAV
+        jQuery.noConflict($('.form-nav ul li a').on( 'click', function(evt) {
 
 			evt.preventDefault();
 
@@ -152,9 +164,9 @@ Template Name: Departments
 
 				//Clear Form Errors
 				$('#department-form').find('.error').removeClass('error');
-
 				$('#department-form').trigger("reset");
 
+				//Change Selected Nav item class type to active
 				$('.form-nav ul li a.active').removeClass( 'active' );
 				$(this).addClass( 'active' );
 
@@ -180,7 +192,7 @@ Template Name: Departments
 
 				    break;
 
-				    case 'police-department':
+				    case 'mailing':
 
 				    	$('.formly.active').removeClass( 'active' ).fadeOut( 300, function() {
 				    		$('#department-form3').fadeIn( 500 ).addClass( 'active' );
@@ -201,9 +213,19 @@ Template Name: Departments
 			}
 
 
-		} );
+		} ));
 
-		$('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
+        //Function to enable Conditional Logic on page
+        jQuery.noConflict($('#department-forms-main-wrap').on( 'change', function(gf_input_change)));
+        /*$('#department-form').on( 'keyup', function(evt){
+            $('#department-form').gf_input_change();
+
+            //Clear Form Errors
+            $('#department-form').find('.error').removeClass('error');
+            $('#department-form').trigger("reset");
+        });*/
+
+        $('#input_6_4, #input_8_4, #input_3_4, select').fancySelect();
 
 		// $('input[name=payee]').on( 'change', function() {
 
