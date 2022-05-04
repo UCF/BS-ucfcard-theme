@@ -7,21 +7,21 @@
 
 <head>
 	<meta charset="utf-8">
-
+	
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-
+	
 	<?php //mobile meta (hooray!) ?>
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-
+	
 	<?php //hide iOS browser bar ?>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<![endif]-->
-
+	
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/css/reset.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/css/style.css" type="text/css" media="screen" />
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -33,15 +33,15 @@
 		<script src="<?php echo THEME_URL.'/library/js/html5shiv.js'; ?>"></script>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/css/ie.css" type="text/css" media="screen" />
 	<![endif]-->
-
+	
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php /* Favicon */ ?>
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/library/images/favicon.ico" />
-
+	
 	<?php /* jQuery UI */ ?>
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/js/jqueryui/jquery-ui.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/js/jqueryui/jquery-ui.min.css" type="text/css" media="screen" />	
 
 
 	<?php /* FancyBox */ ?>
@@ -55,11 +55,8 @@
 	<?php /* Typekit */ ?>
 	<script src="//use.typekit.net/ahs4vma.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-    <?php gravity_form_enqueue_scripts( 4, TRUE ); ?>
-    <?php gravity_form_enqueue_scripts( 8, TRUE ); ?>
-    <?php gravity_form_enqueue_scripts( 6, TRUE ); ?>
-    <?php gravity_form_enqueue_scripts( 3, TRUE ); ?>
-
+	<?php gravity_form_enqueue_scripts( 4, TRUE ); ?>
+	
 	<?php wp_head(); ?>
 </head>
 
@@ -68,7 +65,7 @@
 <article id="the-modal" style="display: none">
 
 	<div id="fancybox-content"></div>
-
+	
 </article>
 
 
